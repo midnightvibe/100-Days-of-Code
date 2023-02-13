@@ -1,12 +1,14 @@
 # Step 1
 import random
-from hangman_art import logo
-from hangman_art import stages
-from hangman_words import word_list
+import hangman_words as hw
+import hangman_art as ha
+# from hangman_art import logo
+# from hangman_art import stages
+# from hangman_words import word_list
 
-print(logo)
+print(ha.logo)
 
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(hw.word_list)
 print(f"Pssst, the solution is {chosen_word}")
 
 display = []
@@ -44,4 +46,4 @@ while not end_of_game and not lives == 0:
 
     previous_guess = guess
 
-    print(stages[lives])
+    print(ha.stages[lives])
