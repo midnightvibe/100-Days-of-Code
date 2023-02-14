@@ -2,6 +2,7 @@
 import random
 import hangman_words as hw
 import hangman_art as ha
+# from replit import clear
 # from hangman_art import logo
 # from hangman_art import stages
 # from hangman_words import word_list
